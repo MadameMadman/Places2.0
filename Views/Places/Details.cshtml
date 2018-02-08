@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+    <meta charset="utf-8">
+    <title>Details of our Places</title>
+  </head>
+  <body>
+    <h1>@Model.GetCity(), @Model.GetState()</h1>
+    <p>@Model.GetDescription()</p>
+
+    <p><a href="/places">Back to list.</a></p>
+  </body>
+</html>

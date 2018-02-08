@@ -8,10 +8,15 @@
   </head>
   <body>
     <h1>Add Places</h1>
-    <form action="/places" method="post">
-      <input id="new-city" name="new-city" type="text" required="true" placeholder="City">
-      <input id="new-state" name="new-state" type="text" placeholder="State or Country">
+  <div class="container">
+    <form action="/places" method="post" id="placeForm">
+      <input id="newCity" name="newCity" type="text" required="true" placeholder="City">
+      <input id="newState" name="newState" type="text" placeholder="State or Country">
       <button type="submit">Submit</button>
+      <div class="container">
+      <textarea rows="4" cols="30" name="newDescription" form="placeForm" placeholder="Enter a description here!"></textarea>
+    </div>
+  </div>
     </form>
   </body>
 </html>

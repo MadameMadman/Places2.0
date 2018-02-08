@@ -6,12 +6,27 @@ namespace Places.Models
     {
         private string _city;
         private string _state;
+        private string _description;
+        private int _id;
         private static List<Place> _instances = new List<Place> {};
 
-        public Place (string city, string state)
+        public Place (string city, string state, string description)
         {
             _city = city;
             _state = state;
+            _description = description;
+            _instances.Add(this);
+            _id = _instances.Count;
+        }
+
+        public string GetDescription()
+        {
+          return _description;
+        }
+
+        public void SetDescription(string newDescription)
+        {
+          _description = newDescription;
         }
 
         public string GetCity()
@@ -34,10 +49,16 @@ namespace Places.Models
             _state = newState;
         }
 
+        public int GetId()
+        {
+          return _id;
+        }
+
         public static List<Place> GetAll()
         {
             return _instances;
         }
+
 
         public void Save()
         {
@@ -49,5 +70,9 @@ namespace Places.Models
             _instances.Clear();
         }
 
+        public static Place Find(int searchId)
+        {
+          return _instances[searchId-1];
+        }
     }
 }

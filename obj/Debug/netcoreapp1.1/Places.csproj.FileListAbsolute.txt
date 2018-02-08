@@ -6,3 +6,11 @@
 /Users/Guest/Desktop/Places/bin/Debug/netcoreapp1.1/Places.pdb
 /Users/Guest/Desktop/Places/obj/Debug/netcoreapp1.1/Places.dll
 /Users/Guest/Desktop/Places/obj/Debug/netcoreapp1.1/Places.pdb
+/Users/Guest/Desktop/placesCSharp/bin/Debug/netcoreapp1.1/Places.deps.json
+/Users/Guest/Desktop/placesCSharp/bin/Debug/netcoreapp1.1/Places.runtimeconfig.json
+/Users/Guest/Desktop/placesCSharp/bin/Debug/netcoreapp1.1/Places.runtimeconfig.dev.json
+/Users/Guest/Desktop/placesCSharp/bin/Debug/netcoreapp1.1/Places.dll
+/Users/Guest/Desktop/placesCSharp/bin/Debug/netcoreapp1.1/Places.pdb
+/Users/Guest/Desktop/placesCSharp/obj/Debug/netcoreapp1.1/Places.AssemblyInfo.cs
+/Users/Guest/Desktop/placesCSharp/obj/Debug/netcoreapp1.1/Places.dll
+/Users/Guest/Desktop/placesCSharp/obj/Debug/netcoreapp1.1/Places.pdb

@@ -8,26 +8,12 @@
   </head>
   <body>
     <h1>Places I've Travelled</h1>
-    @if (Model != null)
-    {
       <ul>
-      @foreach(var place in Model)
-      {
-        @if (@place.GetState() == "")
+        @foreach (var place in Model)
         {
-          <li>@place.GetCity()</li>
+        <li><a href="/places/@place.GetId()">@place.GetCity() , @place.GetState()</a></li>
         }
-        else
-        {
-          <li>@place.GetCity(), @place.GetState()</li>
-        }
-      }
       </ul>
-    }
-    else
-    {
-      <p>You cleared all places from your list!  Add some!</p>
-    }
     <p><a href="/places/new">Add a Place</a></p>
     <form action="/places/delete" method="post">
       <button type="submit" name="button">Clear all places</button>
